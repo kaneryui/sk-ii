@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+.m_logo,.panel,.m_banner01,.m_main_con01,.m_con01,.m_banner02,.m_main_con02,.m_site,.m_f_logo,.m_f_copy,.m_cate{display:none;}
+
+@media screen and (max-width:768px){
+    
+    /*웹 모바일 화*/
+    body{min-width:auto;}
+    .inner{width:auto;}
+    
+    /*웹뷰 안 보임처리*/
+    .logo,.gnb,.main_banner01,.con01,.item_txt,.main_banner02,.con02_top,.t_btn,.f_top dl,.f_bottom div,.nav,.cate{display:none;}
+    
+    /*모바일 뷰 보임처리*/
+    .m_logo,.panel,.m_banner01,.m_con01,.m_main_con01,.m_banner02,.m_main_con02,.m_site,.m_f_logo,.m_f_copy,.m_cate{display:block}
+    
+    /*헤더*/
+    
+    #header{
+        padding:20px;
+    }
+    .m_logo img{
+        display:block;
+    }
+    .panel{
+        text-indent:-9999px;
+        background:url(../images/mobile/m_ico_menu.png) no-repeat center center;
+        width:26px;
+        height:26px;
+        position:absolute;
+        top:23px;
+        right:20px;
+    }
+    .panel a{display: block;}
+    
+    /*메인배너*/
+    .m_banner01{
+        background:url(../images/main_slider.png)no-repeat center center;
+        background-size:cover;
+        height:300px;
+        position:relative;
+    }
+    .m_banner01 a{color:#fff;}
+    
+    .m_banner_txt{
+        position: absolute;
+        left:55%;
+        bottom:40%;
+    }
+    .m_banner_txt h4{
+        font-size:14px;
+    }
+    .m_banner_txt p{
+        margin-top:10px;
+        font-size:16px
+    }
+    
+    /*메인콘텐츠01*/
+    
+    .main_con01{padding-bottom:10px}
+    .main_con01 h2{
+        margin:0;
+        font-size:18px;
+        color:#909090;
+        letter-spacing:2px;
+        padding:25px 0;
+    }
+    .m_con01 li{
+        background:url(../images/mobile/best01.png) no-repeat center center;
+        background-size: contain;
+        width:calc(50% - 10px);
+        margin-left:5px;
+        height:auto;
+        float:left;
+        position:relative;
+        border:1px solid #000;
+    }
+    .m_con01 li a{
+        font-size:16px;
+        color:#2a2a2a;
+        display: block;
+        padding:50% 0;
+        width:100%;
+    }
+    .m_con01 li a span{
+        position:absolute;
+        bottom:5px;
+        right:5px;
+    }
+    .m_con01 .m_right_box{background-image:url(../images/mobile/best02.png);
+    }
+    
+    /*메인배너02*/
+    
+    .m_banner02{
+        margin-top:40px;
+        margin-bottom:20px;
+        background:url(../images/banner.png) no-repeat center center;
+        background-size:cover;
+        height:300px;
+        position:relative;
+        
+    }
+    .m_banner02 a{color:#fff;}
+    
+    /*메인콘텐츠02*/
+    
+    .main_con02 h2{
+        font-size:18px;
+        color:#909090;
+        letter-spacing:2px;
+        padding-bottom:25px;
+        padding-top:10px;
+    }
+    
+    .news{
+        padding:0
+    }
+    .news li{
+        margin-left:6px;
+        margin-right:0;
+        margin-bottom:6px;
+        width:calc(50% - 10px);
+    }
+    .news li h3{
+        padding:5px 0;
+    }
+    .news li p{
+        width:auto;
+        font-size:12px;
+    }
+    .news li .scale{
+        width:100%;
+        height:auto;
+    }
+    .news li img{
+        width:100%;
+    }
+    .news li:hover img{transform:none;}
+    
+    
+    /*푸터*/
+    #footer{
+        margin-top:60px;
+    }
+    .f_top{
+        height:80px;
+        text-align:center;
+    }
+    .f_bottom{
+        height:53px;
+        padding:0
+    }
+    .m_f_logo{
+        width:58px;
+        height:24px;
+        padding:16px 0;
+        margin:0 auto;
+    }
+    .m_site{
+        display:inline-block;
+    }
+    .m_site li{
+        float:left;
+        font-size:10px;
+        font-weight:900;
+    }
+    .m_site li:after{
+        content:"";
+        display:inline-block;
+        clear:both;
+        width:1px;
+        height:6px;
+        background-color:#363636;
+        margin:0 10px;
+    }
+    .m_site li:last-child:after{display:none;}
+    
+    .m_f_copy{
+        padding-top:20px;
+    }
+    
+    /**서브페이지**/
+    
+    /*메인배너*/
+    
+    .sub_banner{
+        background:url(../images/sub/mobile/sub_banner.png) no-repeat center center;
+        background-size:cover;
+        height:300px;
+        text-indent:0;
+    }
+    .sub_banner p{
+        text-align: center;
+        font-size:40px;
+        color:#a85a5a;
+        font-weight: bold;
+        padding-top:20px;
+        font-family:none;
+        
+    }
+    .sub_banner span{display: block;}
+    
+    /*서브콘텐츠01*/
+    
+    .cate_bg h2{
+        font-size:18px;
+        color:#909090;
+        letter-spacing:2px;
+        padding:25px 0;
+        margin:0;
+    }
+    .m_cate{
+        margin:0 20px;
+        margin-top:20px;
+        font-size:18px;
+    }
+    .m_cate li{
+        background:url(../images/sub/mobile/m_sk-ii_sub_ico.png) no-repeat right center;
+        background-size:20px;
+        border-bottom:1px solid #a85a5a;
+    }
+    .m_cate li:nth-child(2n){
+        border-bottom:1px solid #636363;
+    }
+    .m_cate li a{
+        display:block;
+        padding:20px 0;
+    }
+}
